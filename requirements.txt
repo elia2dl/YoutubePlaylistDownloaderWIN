@@ -1,0 +1,4 @@
+subprocess32==3.5.4
+youtube-dl==2020.6.16.1
+moviepy==1.0.3
+
