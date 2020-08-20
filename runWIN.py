@@ -1,6 +1,7 @@
 import os
 import subprocess
 from moviepy.editor import *
+import time
 
 
 def shell():
@@ -28,6 +29,7 @@ def shell():
                 os.system("cls")
                 print("[+] Incolla il link youtube di una playlist o di una canzone.")
                 url = input("")
+                time.sleep(3)
                 os.system("mkdir mp4 & copy youtube-dl.exe mp4 & cd mp4 & youtube-dl.exe -i -f mp4 --yes-playlist " + url)
                 os.system("del mp4\youtube-dl.exe")
                 print("\n\n\n[+] Tutto fatto!")
@@ -37,6 +39,7 @@ def shell():
                 os.system("cls")
                 print("[+] Incolla il link youtube di una playlist o di una canzone.")
                 url = input("")
+                time.sleep(3)
                 os.system("mkdir mp4 & copy youtube-dl.exe mp4 & cd mp4 & youtube-dl.exe -i -f mp4 --yes-playlist " + url)
                 print("[+] Tutto fatto, converto ora i file in mp3")
                 foldermp3 = 'mp3\\'
